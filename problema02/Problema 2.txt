@@ -1,0 +1,22 @@
+Generar un procedimiento sin parámetros. El objetivo del procedimiento es ingresar los valores de un arreglo unidimensional de tipo cadena, el número de elementos del arreglo es de 5; 
+en el mismo procedimiento usar otro ciclo repetitivo para presentar los valores del arreglo. Al procedimiento se lo debe invocar desde la función principal
+
+1. Inicio
+2. funciono principal()
+3. mensaje, x(1000)[{a-z}{A-Z}{0,n}{BS}{+-*/}]
+4. mensaje <-- obtenerValorArreglo()
+5. Escribir mensaje
+6. fin funcion principal
+
+7. funcion obtenerValorArreglo()
+8. (arreglo(5), x(100)[0,n])
+9. fila, i[0,n] <-- 0
+10. para fila = 0, fila < 5, 1 haga
+11. 	Escribir "Ingrese los valores para el arreglo"
+12. 	Leer arreglo[fila]
+13. fin para 
+14. mientras fila < 5 entonces
+15. 	escribir arreglo[fila]
+16. 	fila = fila + 1
+17. fin mientras
+18. fin funcion obtnerValoresArreglo

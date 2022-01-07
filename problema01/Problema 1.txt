@@ -1,0 +1,51 @@
+Generar un procedimiento para calcular el valor de la planilla de luz y otro procedimiento para calcular el valor del predio de un bien inmueble. Cada procedimiento debe tener 2 parámetros 
+(tipo cadena para nombre del cliente, cédula del cliente).
+En el procedimiento de planilla de luz se debe pedir los siguiente datos valor del kilowatio y el número de kilowatios del mes.
+En el procedimiento del predio se debe pedir el valor de inmueble y el para obtener el valor del predio se saca el 2% del valor del inmueble.
+
+1. Inicio
+2. funcion principal()
+3. mensaje, x(1000)[{a-z}{A-Z}{BS}{$}]
+4. nombre, x(100)[{a-z}{A-Z}{BS}]
+5. cedula(20)[0,n]
+6. Escribir "Ingrese su nombre"
+7. Leer noombre
+8. Escribir "Ingrese su cedula"
+9. Leer cedula
+10. Escribir "Ingrese 1 para calcular la planilla de luz.   Ingrese 2 para calcular el valor del predio"
+11. Leer mensaje
+12. Si mensaje == 1 entonces
+13. 	mensaje <-- calcularValorLuz(nombre, cedula)
+14. Si mensaje == 2 entonces
+15. 	mensaje <-- calcularPredio(nombre, cedula)
+16. De lo contario 
+17. 	Escrbir "Proceso incorrecto"
+18. Escribir mensaje
+19. fin funcion principal
+
+20 funcion calcularValorLuz()	
+21. cadena, x(200)[{a-z}{A-Z}{BS}{$}]
+22. kw_h, d[0,n]
+23. kw_mes, d[0,n]
+24. Escribir "Cuanto es el valor de un kilovatio por hora"
+25. Leer kw_h
+26. Escribir "Indique los kilovatios consumidos en el mes"
+27. Leer kw_mes
+28. operacion, d[0,n]
+29. operacion <-- kw_h * kw_mes
+30. cadena = "Cliente " + x + " con cedula " + y + " debe cancelar un valor de $" + operacion
+31. Escribir cadena
+32. fin funcion calcularValorLuz
+
+33. funcion calcularPredio(x, x(100); y, x(100)): x(200)
+34. cadena, x(200)[{a-z}{A-Z}{BS}{$}]
+35. inmueble, d[0,n]
+36. operacion, d[0,n]
+37. Escribir "Cuanto es el valor de su inmueble"
+38. Leer inmueble
+39. operacion <-- (inmueble * 2) / 100
+40. cadena = "Cliente " + x + " con cedula " + y + " tiene un inmueble valorado en $" + inmueble \n
+    " y debe pagar de predio $" + operacion
+41. Escribir cadena
+42. fin funcion calcularPredio
+43. Fin

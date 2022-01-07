@@ -1,0 +1,106 @@
+Generar una solución que implemente 3 procedimientos. Que permitan calcular el área de un cuadrado, área de un triángulo y área de un rectángulo. Cada procedimiento debe solicitar los 
+datos necesarios y presentar o imprimir el valor correspondiente. Se debe invocar a los procedimientos desde un método principal; Si el usuario ingresa 1 se llama al procedimiento 
+obtenerAreaCuadrado; 2 se llama al procedimiento obtenerAreaTriangulo; 3 se llama al procedimiento obtenerAreaCuadrado.
+El área del cuadrado es igual a lado x lado
+El área del triángulo es igual a (base x altura)/2
+El área del rectángulo es igual a base x altura
+
+1. Inicio
+2. funcion principal
+3. mensaje, x(200)[{a-z}{A-Z}{BS}{0,n}]
+4. opcion, i[0,n]
+5. Escribir "Ingrese 1 para obtener el area de un cuadrado. Ingrese 2 para obtener el area del triangulo. Ingrese 3 para obtener el area del rectangulo"
+6. Leer opcion
+7. Si (opcion == 1) entonces
+8.          mensaje <-- obtenerAreaCuadrado
+9. Fin si
+10. Si (opcion == 2) entonces
+11.        mensaje <-- obtenerAreaTriangulo
+14. Fin si 
+13. Si (opcion == 3) entonces
+14.         mensaje = obtenerAreaRectangulo
+15. Fin si
+16. Si (opcion < 1 && opcion > 3)
+16. 	    mensaje = "opción incorrecta"
+17. Fin si    
+18. Escribir mensaje
+19. fin funcion principal
+
+20. funcion obtenerAreaCuadrado() 
+21. lado, d[0,n]
+22. area, d[0,n]
+23. cadena, x(200)[{0,n}{a-z}{A-Z}] <-- ""
+24. Escribir "Ingrese el lado del cuadrado"
+25. Leer lado 
+26. area <-- (lado * lado)
+27.cadena <-- "Lado " + Lado + " Area = " +  Area  
+28. retorna cadena            
+29. fin funcion obtenerAreaCuadrado
+
+30. funcion obtenerAreaTriangulo() 
+31. base, d[0,n]
+32. altura, d[0,n]
+33. area, d[0,n]
+34. cadena, x(200)[{0,n}{a-z}{A-Z}] <-- ""
+35. Escribir "Ingrese la base del triangulo"
+36. Leer base
+37. Escribir "Ingrese la altura del triangulo"
+38. Leer altura
+39. area <-- (base * altura)
+40.cadena <-- "Base " + base + ", altura " + altura + " Area = " +  Area  
+41. retorna cadena      
+42. fin funcion obtenerAreaTriangulo  
+
+43. funcion obtenerAreaRectangulo() 
+44. base, d[0,n]
+45. altura, d[0,n]
+46. area, d[0,n]
+47. cadena, x(200)[{0,n}{a-z}{A-Z}] <-- ""
+48. Escribir "Ingrese la base del recctangulo"
+49. Leer base
+50. Escribir "Ingrese la altura del rectangulo"
+51. Leer altura
+52. area <-- (base * altura) / 2
+53.cadena <-- "Base " + base + ", altura " + altura + " Area = " +  Area  
+54. retorna cadena      
+55. fin funcion obtenerAreaRectangulo
+56. Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
